@@ -1,7 +1,17 @@
-## Image classifier
+## Object detection using tensorflow
 
-the model is created with the Keras nueral network, by referring the below tutorial
-[https://www.geeksforgeeks.org/cifar-10-image-classification-in-tensorflow/](https://www.geeksforgeeks.org/cifar-10-image-classification-in-tensorflow/)
+<br/>
 
-It is deployed on heroku and can be accessed through
-[https://cifar10-image-classifier.herokuapp.com/](https://cifar10-image-classifier.herokuapp.com/)
+### To run the application
+
+```
+    python -m venv env
+
+    source env/bin/activate
+
+    pip install -r requirements.txt
+
+    python object_detector/wsgi.py
+```
+
+**Nb : This application is not deployed since the total compiled size is greater than 500 Mb and it couldn't be uploaded to heroku**
