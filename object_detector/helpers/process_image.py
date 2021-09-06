@@ -48,8 +48,8 @@ def process_image(model, image, category_index):
         category_index,
         instance_masks=output_dict.get('detection_masks_reframed', None),
         use_normalized_coordinates=True,
-        line_thickness=8
-    )
+        line_thickness=8,
+        min_score_thresh=.75)
 
     save_path = 'static/temp/result.png'
     im = Image.fromarray(image_np)
