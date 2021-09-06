@@ -1,1 +1,1 @@
-web: gunicorn wsgi:app
+web: gunicorn object_detector.wsgi:app
